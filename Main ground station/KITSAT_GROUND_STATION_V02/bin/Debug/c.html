@@ -1,0 +1,99 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  <title>Google ��ͼ </title>
+    <script src="http://ditu.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAAoCFp6piA5TdWC-5_bZgu7RS9lPn4kwaPkL0vb9cGszLNmeUJ5BT2r8YGz3GB-bx-IJ4GUvOmRrczxQ"
+            type="text/javascript"></script>
+    <script type="text/javascript">
+    //<![CDATA[
+    
+    //shanghai
+    var xOffset= 0.001889737;
+    var yOffset= 0.004844069;
+
+    var map;
+    var mk1;
+    var n="00000";
+    var totalnum=0;
+
+    function testfun()
+	{
+	   window.external.testfun();
+	}
+	function test()
+	{
+	  alert("hello!");
+	}
+	function gettype()
+	{
+	    return map.getCurrentMapType().getName(true);
+	}
+	function movemarker(w,j)
+	{
+        var p=new GLatLng(w, j);
+        map.clearOverlays();
+ 
+        mk1.setPoint(p);
+
+        map.addOverlay(mk1);
+        
+	}
+
+
+
+    
+    function openmark( num,text ) { n=num; markers[num].openInfoWindowHtml("Sensor node number #" + num + "<br>"+text);}
+    
+    function flyto(weidu,jingdu){ 
+
+	map.panTo(new GLatLng(weidu,jingdu));
+	}
+    
+    function line(w1,j1,w2,j2){  var polyline = new GPolyline([  new GLatLng(w1, j1),
+                                                       new GLatLng(w2,j2)], "#ff0000", 10);
+                                                       map.addOverlay(polyline);
+    }
+ 
+
+    function resize()
+    {
+       var w;
+       var h;
+       w=document.body.offsetWidth-43;
+       h=document.body.offsetHeight-34;
+       document.getElementById("map").style.width = w.toString()+"px";
+       document.getElementById("map").style.height = h.toString()+"px";
+    }
+
+    function load() 
+    {
+         
+        map = new GMap2(document.getElementById("map"));
+        map.enableContinuousZoom();
+        map.enableScrollWheelZoom();
+        map.addControl(new GLargeMapControl());
+	    map.addControl(new GMapTypeControl());
+        map.setCenter(new GLatLng(36.372511,127.366267),17);
+
+
+        map.setMapType(G_SATELLITE_MAP);//�޸ĵ�ͼ���
+
+		var point = new GLatLng(32, 118);  
+        mk1=new GMarker(point); 
+        GEvent.addListener(mk1, "click", function () 
+                                                {  mk1.openInfoWindowHtml("GPS Point!"+"<br>"+mk1.getPoint().toString());}
+			             );  
+
+        document.oncontextmenu=new Function("event.returnValue=false;"); //ͽ�ֹ�Ҽ��,ܵ����Ҽ����κη�Ӧ
+        document.onselectstart=new Function("event.returnValue=false;"); //��ֹ���,�Ҳ�����޷����
+    }
+
+    //]]>
+    </script>
+  </head>
+  <body onload="load()" onresize="resize()" onclick="resize()">
+    <div id="map" style="width: 450px; height: 300px"></div>
+    
+  </body>
+</html>

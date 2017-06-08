@@ -1,0 +1,37 @@
+[AB_Cache_{058247C9-87A9-42C9-806B-4AF388AA3B50}]
+Cache_ProjSymbolChksum[String] = "7dea362b3fac8e00956a4952a3d4f474"
+Cache_TargetSymbolChksum[String] = "7dea362b3fac8e00956a4952a3d4f474"
+Cache_MyCompChksum[String] = "95c353a8b2bd05a3ccbc8a3669787c91"
+Cache_GenFile_Count[Integer] = 3
+Cache_GenFile[0][Path] Line0001 = "/C/builds/KITSAT_전체화면/KITSAT_전체화면/Ap"
+Cache_GenFile[0][Path] Line0002 = "plication.exe"
+Cache_GenFile[1][Path] Line0001 = "/C/builds/KITSAT_전체화면/KITSAT_전체화면/Ap"
+Cache_GenFile[1][Path] Line0002 = "plication.aliases"
+Cache_GenFile[2][Path] Line0001 = "/C/builds/KITSAT_전체화면/KITSAT_전체화면/Ap"
+Cache_GenFile[2][Path] Line0002 = "plication.ini"
+Cache_GenGUID_Count[Integer] = 3
+Cache_GenGUID[0][String] = "{18E4E952-3FD7-401F-AB67-CD9AE50DF9DE}"
+Cache_GenGUID[1][String] = "{66EBD88D-A55C-473F-982D-86BA3FC0C322}"
+Cache_GenGUID[2][String] = "{5006E239-BEF5-43C0-B453-BD18DA370AC2}"
+Cache_OutputDir[Path] = "/C/builds/KITSAT_전체화면/KITSAT_전체화면"
+
+[AB_Cache_{B9A18364-19E2-442F-8892-22A26038AA23}]
+Cache_ProjSymbolChksum[String] = "7dea362b3fac8e00956a4952a3d4f474"
+Cache_TargetSymbolChksum[String] = "7dea362b3fac8e00956a4952a3d4f474"
+Cache_MyCompChksum[String] = "95c353a8b2bd05a3ccbc8a3669787c91"
+Cache_GenFile_Count[Integer] = 3
+Cache_GenFile[0][Path] Line0001 = "/C/builds/KITSAT_전체화면/KITSAT_전체화면/Ap"
+Cache_GenFile[0][Path] Line0002 = "plication.exe"
+Cache_GenFile[1][Path] Line0001 = "/C/builds/KITSAT_전체화면/KITSAT_전체화면/Ap"
+Cache_GenFile[1][Path] Line0002 = "plication.aliases"
+Cache_GenFile[2][Path] Line0001 = "/C/builds/KITSAT_전체화면/KITSAT_전체화면/Ap"
+Cache_GenFile[2][Path] Line0002 = "plication.ini"
+Cache_GenGUID_Count[Integer] = 3
+Cache_GenGUID[0][String] = "{18E4E952-3FD7-401F-AB67-CD9AE50DF9DE}"
+Cache_GenGUID[1][String] = "{66EBD88D-A55C-473F-982D-86BA3FC0C322}"
+Cache_GenGUID[2][String] = "{5006E239-BEF5-43C0-B453-BD18DA370AC2}"
+Cache_OutputDir[Path] = "/C/builds/KITSAT_전체화면/KITSAT_전체화면"
+
+[ProjectWindow_Data]
+ProjectExplorer.ClassicPosition[String] = "47,347,447,1046"
+
